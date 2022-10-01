@@ -1,0 +1,10 @@
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/bin/Debug/EventModule.dll
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/bin/Debug/EventModule.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/bin/Debug/UnityEngine.dll
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/bin/Debug/UnityEngine.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/bin/Debug/UnityEngine.xml
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/obj/Debug/EventModule.csprojAssemblyReference.cache
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/obj/Debug/EventModule.csproj.CoreCompileInputs.cache
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/obj/Debug/EventModule.csproj.CopyComplete
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/obj/Debug/EventModule.dll
+/Users/p.kravtsov/RiderProjects/EventModule/EventModule/obj/Debug/EventModule.pdb

@@ -1,0 +1,14 @@
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/TestProject.dll
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/TestProject.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/nunit.framework.dll
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/nunit.framework.xml
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/obj/Debug/TestProject.csprojAssemblyReference.cache
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/obj/Debug/TestProject.csproj.CoreCompileInputs.cache
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/obj/Debug/TestProject.csproj.CopyComplete
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/obj/Debug/TestProject.dll
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/obj/Debug/TestProject.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/EventModule.dll
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/EventModule.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/UnityEngine.dll
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/UnityEngine.pdb
+/Users/p.kravtsov/RiderProjects/EventModule/TestProject/bin/Debug/UnityEngine.xml

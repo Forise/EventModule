@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventModule</name>
+    </assembly>
+    <members>
+        <member name="T:EventModule.AEventModule">
+            <summary>
+            Base abstract class for EventModule.
+            </summary>
+        </member>
+        <member name="P:EventModule.AEventModule.Observers">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.AEventModule.SubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes one enum element to event handler
+            </summary>
+            <param name="type">Enum element</param>
+            <param name="handler">Handler method</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.SubscribeRange``1(System.Collections.Generic.ICollection{``0},System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes all T enum members to handler
+            </summary>
+            <typeparam name="TEnum">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.SubscribeRange``1(System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes all T enum members to handler
+            </summary>
+            <typeparam name="TEnum">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.UnsubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Unsubscribes one enum element to event handler
+            </summary>
+            <param name="type">Enum element</param>
+            <param name="handler">Handler method</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.UnsubscribeAllForObserver(EventModule.Interfaces.IEventObserver)">
+            <summary>
+            Unsubscribes everything from observer
+            </summary>
+        </member>
+        <member name="M:EventModule.AEventModule.UnsubscribeAllForEnum``1">
+            <summary>
+            Unsubscribes everything for EnumType
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.UnsubscribeAll">
+            <summary>
+            Unsubscribes everything for all observers
+            </summary>
+        </member>
+        <member name="M:EventModule.AEventModule.NotifyT``1(System.Object,EventModule.GameEventArgs{``0})">
+            <summary>
+            Notifies Event with type T and event args
+            </summary>
+            <param name="sender">Object which notified event</param>
+            <param name="eventArgs">Arguments/additional data for event</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModule.NotifyT``1(System.Object,``0)">
+            <summary>
+            Notifies Event with type T and event args
+            </summary>
+            <param name="sender">Object which notified event</param>
+            <param name="type">Enum member. Event type</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="T:EventModule.AEventModuleMono">
+            <summary>
+            Base abstract class for EventModule as MonoBehaviour.
+            </summary>
+        </member>
+        <member name="P:EventModule.AEventModuleMono.Observers">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.AEventModuleMono.SubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes one enum element to event handler
+            </summary>
+            <param name="type">Enum element</param>
+            <param name="handler">Handler method</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.SubscribeRange``1(System.Collections.Generic.ICollection{``0},System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes all T enum members to handler
+            </summary>
+            <typeparam name="TEnum">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.SubscribeRange``1(System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribes all T enum members to handler
+            </summary>
+            <typeparam name="TEnum">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.UnsubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Unsubscribes one enum element to event handler
+            </summary>
+            <param name="type">Enum element</param>
+            <param name="handler">Handler method</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.UnsubscribeAllForObserver``1(EventModule.EventObserver{``0})">
+            <summary>
+            Unsubscribes everything from observer
+            </summary>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.UnsubscribeAllForEnum``1">
+            <summary>
+            Unsubscribes everything for EnumType
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.UnsubscribeAll">
+            <summary>
+            Unsubscribes everything for all observers
+            </summary>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.NotifyT``1(System.Object,EventModule.GameEventArgs{``0})">
+            <summary>
+            Notifies Event with type T and event args
+            </summary>
+            <param name="sender">Object which notified event</param>
+            <param name="eventArgs">Arguments/additional data for event</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="M:EventModule.AEventModuleMono.NotifyT``1(System.Object,``0)">
+            <summary>
+            Notifies Event with type T and event args
+            </summary>
+            <param name="sender">Object which notified event</param>
+            <param name="type">Enum member. Event type</param>
+            <typeparam name="T">Enum type</typeparam>
+        </member>
+        <member name="T:EventModule.EventObserver`1">
+            <summary>
+            Represents observer of events by enum.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:EventModule.EventObserver`1.Type">
+            <inheritdoc />
+        </member>
+        <member name="P:EventModule.EventObserver`1.Subscribes">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.Notify(System.Object,EventModule.GameEventArgs{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.Notify(System.Object,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.Subscribe(`0,System.EventHandler{EventModule.GameEventArgs{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.Unsubscribe(`0,System.EventHandler{EventModule.GameEventArgs{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.UnsubscribeAll">
+            <inheritdoc cref="M:EventModule.Interfaces.IEventSubscribable.UnsubscribeAll" />
+        </member>
+        <member name="M:EventModule.EventObserver`1.NotifyT``1(System.Object,EventModule.GameEventArgs{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.NotifyT``1(System.Object,``0)">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.SubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.EventObserver`1.UnsubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <inheritdoc />
+        </member>
+        <member name="P:EventModule.Example.ExampleGameEventModule.Observers">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.SubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.UnsubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.UnsubscribeAllForObserver(EventModule.Interfaces.IEventObserver)">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.UnsubscribeAllForEnum``1">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.UnsubscribeAll">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.NotifyT``1(System.Object,EventModule.GameEventArgs{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:EventModule.Example.ExampleGameEventModule.NotifyT``1(System.Object,``0)">
+            <inheritdoc />
+        </member>
+        <member name="T:EventModule.GameEventArgs`1">
+            <summary>
+            Arguments for event class container
+            </summary>
+            <typeparam name="T">Enum</typeparam>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.type">
+            <summary>
+            Event type - value from Enum T
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.str">
+            <summary>
+            string parameter
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.intParam">
+            <summary>
+            int parameter
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.floatParam">
+            <summary>
+            float parameter
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.boolParam">
+            <summary>
+            bool parameter
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.objectParam">
+            <summary>
+            object parameter
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.okAction">
+            <summary>
+            Action parameter - for confirmation/positive actions
+            </summary>
+        </member>
+        <member name="F:EventModule.GameEventArgs`1.cancelAction">
+            <summary>
+            Action parameter - for negative response actions
+            </summary>
+        </member>
+        <member name="P:EventModule.Interfaces.IEventModule.Observers">
+            <summary>
+            Collection of observers. You MUST fill in this collections with all modules(event modules) which you are using.
+            </summary>
+        </member>
+        <member name="T:EventModule.Interfaces.IEventNotifier">
+            <summary>
+            Represents object which can notify event;
+            </summary>
+        </member>
+        <member name="M:EventModule.Interfaces.IEventNotifier.NotifyT``1(System.Object,EventModule.GameEventArgs{``0})">
+            <summary>
+            Notify observers with event and arguments method. 
+            </summary>
+            <param name="sender">sender object</param>
+            <param name="eventArgs">event arguments (additional data)</param>
+            <typeparam name="T">Enum with events; T : Enum</typeparam>
+        </member>
+        <member name="M:EventModule.Interfaces.IEventNotifier.NotifyT``1(System.Object,``0)">
+            <summary>
+            Notify observers with event method. 
+            </summary>
+            <param name="sender">sender object</param>
+            <param name="type">Event(value/member) from Enum with events;</param>
+            <typeparam name="T">Enum with events; T : Enum</typeparam>
+        </member>
+        <member name="T:EventModule.Interfaces.IEventObserver">
+            <summary>
+            Observer interface
+            </summary>
+        </member>
+        <member name="P:EventModule.Interfaces.IEventObserver.Type">
+            <summary>
+            Enum type with events
+            </summary>
+        </member>
+        <member name="T:EventModule.Interfaces.IEventSubscribable">
+            <summary>
+            Represent object which can subscribe/unsubscribe for event;
+            </summary>
+        </member>
+        <member name="M:EventModule.Interfaces.IEventSubscribable.SubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Subscribe handler to event with type 'type'. 
+            </summary>
+            <param name="type">Event(value/member) from Enum with events;</param>
+            <param name="handler">Handler method/delegate with event arguments (additional data)</param>
+            <typeparam name="T">Enum with events; T : Enum</typeparam>
+        </member>
+        <member name="M:EventModule.Interfaces.IEventSubscribable.UnsubscribeT``1(``0,System.EventHandler{EventModule.GameEventArgs{``0}})">
+            <summary>
+            Unsubscribe handler from event with type 'type'. 
+            </summary>
+            <param name="type">Event(value/member) from Enum with events;</param>
+            <param name="handler">Handler method/delegate with event arguments (additional data)</param>
+            <typeparam name="T">Enum with events; T : Enum</typeparam>
+        </member>
+        <member name="M:EventModule.Interfaces.IEventSubscribable.UnsubscribeAll">
+            <summary>
+            Unsubscribes all events
+            </summary>
+        </member>
+        <member name="P:EventModule.Interfaces.IEventSubscribeHolder`1.Subscribes">
+            <summary>
+            Represents hashset of subscribed handlers by ENUM_WITH_EVENTS key;
+            Dictionary of (ENUM_WITH_EVENTS, HashSet[EventHandler[GameEventArgs[T]]]);
+            </summary>
+        </member>
+    </members>
+</doc>
